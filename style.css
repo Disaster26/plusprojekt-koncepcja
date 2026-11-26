@@ -313,3 +313,22 @@ h2+p,h2+.lead{margin-top:18px}
 .b20l b{font-weight:800;margin-right:6px}
 @media (max-width:1020px){.ofg{grid-template-columns:1fr 1fr}.baner20{grid-template-columns:1fr;gap:22px;padding:32px 30px}.b20l{padding:20px 0 0;border-left:0;border-top:1px solid rgba(255,255,255,.35)}}
 @media (max-width:640px){.ofg{grid-template-columns:1fr;gap:14px}.ofk{padding:22px 20px 20px}.baner20{padding:28px 22px;margin-bottom:44px}.b20n b{font-size:76px}}
+/* logo klienta */
+.logo img{display:block;height:46px;width:auto}
+.foot .logo img{height:44px}
+@media (max-width:900px){.logo img{height:38px}}
+@media (max-width:380px){.logo img{height:32px}}
+/* skany referencji */
+.papier.skan{display:block;padding:0;overflow:hidden}
+.papier.skan img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.kartka figcaption{display:grid;gap:3px;line-height:1.35}
+.kartka figcaption b{color:var(--ink);font-size:15px}
+.kartka figcaption time{font-weight:700;color:var(--b);font-size:13px}
+.kartki.wszystkie{grid-template-columns:repeat(4,1fr);gap:34px 22px}
+@media (max-width:1020px){.kartki.wszystkie{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:700px){.kartki.wszystkie{grid-template-columns:1fr 1fr;overflow:visible;gap:26px 14px;padding:0}}
+/* baner 20 lat: logo pionowe po prawej */
+.baner20{grid-template-columns:auto 1fr auto}
+.b20logo{display:block;height:150px;width:auto;opacity:.95}
+@media (max-width:1020px){.baner20{grid-template-columns:1fr auto;grid-template-areas:"n l" "u u";column-gap:16px}.b20n{grid-area:n}.b20l{grid-area:u}.b20logo{grid-area:l;height:110px}}
+@media (max-width:640px){.b20logo{height:64px}.b20n{gap:12px}.b20n span{font-size:18px}}
